@@ -1,0 +1,11 @@
+.container {
+  background-color: var(--color-primary);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.title-font {
+  font-weight: bolder;
+  text-decoration: underline;
+}

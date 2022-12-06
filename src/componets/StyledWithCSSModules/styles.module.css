@@ -1,0 +1,12 @@
+.container {
+  background-color: purple;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.titleFont {
+  font-weight: 900;
+  text-decoration: underline;
+  color: yellow;
+}
