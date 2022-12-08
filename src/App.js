@@ -12,24 +12,28 @@ import StyledWithGlobalCSS from './componets/StyledWithGlobalCSS';
 import StyledWithInnlineCSS from './componets/StyledWithInnlineCSS';
 import StyledWithCSSModules from './componets/StyledWithCSSModules/StyledWithCSSModules';
 import { StyledDiv } from './componets/StyledWithStyledComponents';
+import Counter from './componets/Counter';
+import TodoList from './componets/TodoList';
 
 const listOfJSX = data.map((element, index) => {
   return (
-    <Card key={index} {...element} />
+    <Card key={element.id} title={element.title} text={element.text}  />
   )
 })
 
 function App() {
   return (
     <div className="card-wrapper">
-      {/* {listOfJSX} */}
-      <StyledWithGlobalCSS />
-      <StyledWithInnlineCSS />
-      <StyledWithCSSModules />
 
-      <StyledDiv>
-        <h3>This is inside a styled-components div</h3>
-      </StyledDiv>
+      {/* This component keeps track of if the pointere is inside it or not */}
+      <StyledWithGlobalCSS />
+
+      {/* This keeps the count as a state */}
+      <Counter />
+
+      {/* More advanced showcase of how to handle Array as a state */}
+      <TodoList />
+
     </div>
   );
 }

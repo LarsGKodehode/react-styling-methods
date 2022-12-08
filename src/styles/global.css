@@ -9,3 +9,11 @@
   font-weight: bolder;
   text-decoration: underline;
 }
+
+.hasBeenClicked {
+  background-color: blueviolet;
+}
+
+.hasBeenClicked:hover {
+  border: 2px solid black
+}
