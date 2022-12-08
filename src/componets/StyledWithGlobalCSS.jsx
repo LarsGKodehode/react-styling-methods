@@ -1,3 +1,7 @@
+// React documentation reference
+// https://beta.reactjs.org/apis/react/useState#usestate
+
+// We need to import the useState hook from React
 import { useState } from 'react'
 
 function StyledWithGlobalCSS() {
